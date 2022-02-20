@@ -1,5 +1,5 @@
 <h1>Random Food Joke</h1>
 
-<% form_with(method: 'get', local: true) do |f| %>
-  <% f.button_tag %>
+<%= form_with(url: search_path, method: 'get', local: true) do |f| %>
+  <%= f.submit "Joke Me" %>
 <% end %>
