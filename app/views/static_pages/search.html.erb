@@ -1,0 +1,8 @@
+<h1>Result</h1>
+<% if @result %>
+  <p id="result"><%= @result["text"] %></p>
+<% else %>
+  <p>No result returned.</p>
+<% end %>
+
+<%= link_to "Generate another joke", root_url %>

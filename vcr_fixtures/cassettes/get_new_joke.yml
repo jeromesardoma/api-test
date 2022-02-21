@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/jokes/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Rapidapi-Host:
+      - spoonacular-recipe-food-nutrition-v1.p.rapidapi.com
+      X-Rapidapi-Key:
+      - <%= ENV['rapid_api_key'] %>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Authorization, UserId, Hash, Name, Password, Accept, Accept-Language, Content-Language,
+        Content-Type, Cache-Control, Origin, X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Allow-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS, DELETE, PUT
+      Allow-Control-Allow-Origin:
+      - "*"
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Ray:
+      - 6e0dc8d6be9f8e6c-PDX
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 21 Feb 2022 06:05:43 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Xvp46RPbSP98dx81B3qC%2BYvg%2Biz%2BSIa5OoRa%2BiHwEkVJ1crVZEgkRY%2Bge3PHj%2Bynr9t3g5WTBUTQWCAJfbSNAaB1MBCkBIZK6hQ%2FJUxdi%2BdgELVZAEz0QK1fvy2wqEo%2BBvjsnuk%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - RapidAPI-1.2.8
+      X-Rapidapi-Region:
+      - AWS - us-west-2
+      X-Rapidapi-Version:
+      - 1.2.8
+      X-Ratelimit-Requests-Limit:
+      - '50'
+      X-Ratelimit-Requests-Remaining:
+      - '49'
+      X-Ratelimit-Requests-Reset:
+      - '86363'
+      X-Ratelimit-Results-Limit:
+      - '500'
+      X-Ratelimit-Results-Remaining:
+      - '500'
+      X-Ratelimit-Results-Reset:
+      - '86363'
+      X-Ratelimit-Tinyrequests-Limit:
+      - '500'
+      X-Ratelimit-Tinyrequests-Remaining:
+      - '500'
+      X-Ratelimit-Tinyrequests-Reset:
+      - '86363'
+      Content-Length:
+      - '248'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"text":"Three couples are dining together.\nThe American husband says
+        to his wife: \"Pass me the honey, Honey\".\nThe English husband says to his
+        wife: \"Pass me the sugar, Sugar\".\nThe husband says to his wife: \"Pass
+        me the steak, Dumb cow\"."}'
+  recorded_at: Mon, 21 Feb 2022 06:05:43 GMT
+recorded_with: VCR 6.0.0
