@@ -10,7 +10,7 @@ http_interactions:
       X-Rapidapi-Host:
       - spoonacular-recipe-food-nutrition-v1.p.rapidapi.com
       X-Rapidapi-Key:
-      - 0062e52c45msh373e4573e12388bp1b93aejsna678fdb33162
+      - <%= ENV['rapid_api_key'] %>
   response:
     status:
       code: 200
@@ -25,7 +25,7 @@ http_interactions:
       - "*"
       Allow-Control-Allow-Methods:
       - GET, HEAD, POST, OPTIONS, DELETE, PUT
-      Allow-Control-Allow-Origin:
+      Allow-Control-Allow-Origin
       - "*"
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
