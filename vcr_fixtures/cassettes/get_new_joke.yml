@@ -10,7 +10,7 @@ http_interactions:
       X-Rapidapi-Host:
       - spoonacular-recipe-food-nutrition-v1.p.rapidapi.com
       X-Rapidapi-Key:
-      - <%= ENV['rapid_api_key'] %>
+      - "<Rapid API Key>"
   response:
     status:
       code: 200
@@ -25,57 +25,55 @@ http_interactions:
       - "*"
       Allow-Control-Allow-Methods:
       - GET, HEAD, POST, OPTIONS, DELETE, PUT
-      Allow-Control-Allow-Origin
+      Allow-Control-Allow-Origin:
       - "*"
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Ray:
-      - 6e0dc8d6be9f8e6c-PDX
+      - 6e443466c9585b47-IAD
       Content-Type:
       - application/json
       Date:
-      - Mon, 21 Feb 2022 06:05:43 GMT
+      - Sun, 27 Feb 2022 20:36:20 GMT
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Xvp46RPbSP98dx81B3qC%2BYvg%2Biz%2BSIa5OoRa%2BiHwEkVJ1crVZEgkRY%2Bge3PHj%2Bynr9t3g5WTBUTQWCAJfbSNAaB1MBCkBIZK6hQ%2FJUxdi%2BdgELVZAEz0QK1fvy2wqEo%2BBvjsnuk%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Nq1y1ezB8Q7aXhAhwOD1j333w21CFPzFzUm%2BsWfu7za2wnEw0Jb4H9i3rDkb9egDz8iz9X2i15lPF%2BMNQneewJs9IFHBeUrdhBj5gOlsvOzWdNNccUUumkXPq6u5gzuujra3ALU%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - RapidAPI-1.2.8
       X-Rapidapi-Region:
-      - AWS - us-west-2
+      - AWS - us-east-1
       X-Rapidapi-Version:
       - 1.2.8
       X-Ratelimit-Requests-Limit:
       - '50'
       X-Ratelimit-Requests-Remaining:
-      - '49'
+      - '48'
       X-Ratelimit-Requests-Reset:
-      - '86363'
+      - '34126'
       X-Ratelimit-Results-Limit:
       - '500'
       X-Ratelimit-Results-Remaining:
       - '500'
       X-Ratelimit-Results-Reset:
-      - '86363'
+      - '34126'
       X-Ratelimit-Tinyrequests-Limit:
       - '500'
       X-Ratelimit-Tinyrequests-Remaining:
       - '500'
       X-Ratelimit-Tinyrequests-Reset:
-      - '86363'
+      - '34126'
       Content-Length:
-      - '248'
+      - '95'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"text":"Three couples are dining together.\nThe American husband says
-        to his wife: \"Pass me the honey, Honey\".\nThe English husband says to his
-        wife: \"Pass me the sugar, Sugar\".\nThe husband says to his wife: \"Pass
-        me the steak, Dumb cow\"."}'
-  recorded_at: Mon, 21 Feb 2022 06:05:43 GMT
+      string: '{"text":"Patron 1: I eat at a different restaurant every day.\nPatron
+        2: I don''t tip, either."}'
+  recorded_at: Sun, 27 Feb 2022 20:36:20 GMT
 recorded_with: VCR 6.0.0
